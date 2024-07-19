@@ -1,27 +1,25 @@
-# Afroverb: Real-time Translation Services for African Languages
+# AfroVerb - Real-time Translation Services for African Languages
 
-As part of the [A2SV Hackathon](https://hackathon.a2sv.org/), we decided to build Afroverb - a centralized platform that aims to bridge the language gap by offering seamless real-time translation services for African languages. Our user-friendly web app is designed to cater to both tech-savvy and less tech-savvy users, making language translation accessible to everyone.
+Welcome to the AfroVerb Github repository! AfroVerb is an AI-powered platform designed to bridge the language gap by offering seamless real-time translation services for African languages. This repository contains the source code, development history, and supporting materials for the AfroVerb platform.
 
-## Key Features
+## Structure
 
-- **Text Translation**: Instantly translate text between various African languages and English, making communication easier and more efficient.
-- **Speech Translation**: Convert spoken words into translated text in real-time, perfect for live conversations or meetings.
-- **Speech-to-Text**: Convert spoken language into written text in the same or another language, ideal for transcribing audio files or dictations.
-- **Text-to-Speech**: Convert written text into spoken words in the target language, useful for learning pronunciation or for accessibility purposes.
-- **Real-Time Conversation Mode**: Enable seamless back-and-forth conversations with real-time translation, facilitating smooth and natural multilingual interactions.
+This repository is structured as follows:
 
-## Technical Stack
+- `backend/`: This directory contains the backend code of the AfroVerb platform, including the API endpoints, database models, and business logic implemented in Python using the Django framework.
+- `frontend/`: Here, you will find the frontend code for the AfroVerb platform, implemented using JavaScript, React, and Redux. This directory also includes the HTML, CSS, and JavaScript files for the user interface.
+- `models/`: This directory contains the trained AI models used by AfroVerb to enhance the platform's capabilities. The models are implemented using Python-based AI/ML libraries, and they play a crucial role in solving specific problems such as real-time translation for African languages.
 
-Our project utilizes a robust and modern technical stack to ensure efficient and reliable translation services:
+## Purpose
 
-- **Programming Languages**: HTML, CSS, Javascript (For Landing page)
-- **Frontend Frameworks/Libraries**: ReactJS
-- **Backend Frameworks/Libraries**: Django/Python/Jinja
-- **External AI Models (If used)**: Gemini AI/ GPT 3.5
-- **Database Management**: Firebase
+The purpose of this repository is to provide a collaborative space for development and improvement of the AfroVerb platform. By making the repository publicly accessible, we aim to foster community engagement, allowing developers, contributors, and users to explore the codebase, report issues, and suggest enhancements.
 
-## Repository
+## How AI Models Power AfroVerb
 
-You can access our project's code and contribute to our mission of breaking language barriers by visiting our [GitHub Repository](https://github.com/sergyDwhiz/AfroVerb).
+AfroVerb leverages the integration of multiple AI models to different services (Gemini, GPT-4, etc.), to create an engaging and informative conversation. Key features include:
 
-Afroverb is more than just a translation service. It's a tool that empowers individuals to communicate and connect beyond language boundaries. Join us in our journey to make African languages accessible to everyone.
+- Real-time translation services for African languages
+- User-friendly web app designed to cater to both tech-savvy and less tech-savvy users
+- Text Translation, Speech Translation, Speech-to-Text, Text-to-Speech, and Real-Time Conversation Mode
+
+AfroVerb is more than just a translation service. It's a tool that empowers individuals to communicate and connect beyond language boundaries. Join us in our journey to make African languages accessible to everyone.
