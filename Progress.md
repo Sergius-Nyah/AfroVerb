@@ -12,7 +12,7 @@
     - Handle Data Synchronization between App and Firestore
     - Error Handling for Database Operations
 
-- [x] Implement Server-Side Validation
+- [ximport polyscope as ps] Implement Server-Side Validation
     - Input Validation for User Registration and Login
     - Data Sanitization for User Inputs
 
