@@ -3,6 +3,9 @@
     margin: 0;
 }
 body{
+  width: 100%;
+  height: 100%;
+  align-items: center;
 
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
@@ -16,7 +19,8 @@ html {
   } */
   header{
     background-color: rgba(243, 242, 242, 0.736);
-    padding: 30px 30px;
+    padding: 40px 40px 30px 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,4 +91,126 @@ opacity: 0px;
 a{
     font-weight: 700;
    line-height: 23px;
+}
+#desktop-nav{
+margin-left: -50px;
+
+}
+.section{
+  margin-top: 5%;
+width: 100%;
+display: flex;
+}
+h2{
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 50px;
+    line-height: 76.5px;
+}
+h5{
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 43.7px;
+}
+#section1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  /* padding: 10px 10px; */
+}
+#Nigerian-flag{
+  width: 143.849px;
+height: 138.017px;
+flex-shrink: 0;
+border-radius: 1px;
+background: url(../images/Nigerian_flag.png) 0px -0.74px / 100% 100% no-repeat;
+}
+.image-container{
+  /* background-color: red; */
+  position: relative;
+  width: 200px;
+height: 200px;
+}
+.stacked-image{
+  position: absolute;
+  width: 100%;
+height: 100%;
+top: 22px;
+left: 18px;
+}
+.image-overlap{
+  position: absolute;
+  width: 85%;
+  top: 7px;
+  left: 7px;
+ }
+#Nigeria_map_div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -50px;
+  left: 0px;
+}
+#Congo_map_div{
+  position: absolute;
+  top: 550px;
+  left: 960px;
+}
+#Congolese_flag{
+  position: absolute;
+  width: 77.694px;
+  height: 74.544px;
+top: 20px;
+left: 20px;
+}
+#kenya_map_div{
+  position: absolute;
+  top: 780px;
+  left: 1200px;
+}
+#kenyan_flag{
+  position: absolute;
+  width: 111.582px;
+height: 107.059px;
+  top: 13px;
+  left: 12px;
+}
+
+#background1{
+  position: relative;
+  width: 365px;
+height: 265px;
+flex-shrink: 0;
+  border-radius: 222.5px 222.5px 0px 0px;
+background: #FFE562;
+}
+#woman_image{
+  position: absolute;
+  top: -70px;
+  left: 20px;
+  width: 323px;
+height: 335px;
+flex-shrink: 0;
+background: url(../images/african-woman2.png)  0px 0px / 100% 100% no-repeat;
+}
+#woman_flag_div{
+  position: absolute;
+  top: 650px;
+  left: 680px;
+}
+#Cameroonian_flag{
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+#Cameroon_map_div{
+  position: absolute;
+  left: -45px;
+}
+.right-div{
+  margin-top: -20px;
+  height: 500px;
 }

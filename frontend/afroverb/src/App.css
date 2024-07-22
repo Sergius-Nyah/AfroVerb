@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+    font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*Styling for the header section with the logo*/
+#header{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F7F7F7;
+  padding: 24px 112px 24px 60px;
+}
+/*Style for the navigation with links*/
+nav{
+  width: 34%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--Shade-Black, #000);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 145%;
+gap: 20px
+}
+#text{/*Increasing padding of text to align with buttons*/
+  padding-top: 20px;
+}
+/*Styling for buttons with white backgrounds*/
+ .btn{
+  /* width:140px; */
+  height: 55px;
+  padding: 4% 1% 2% 2%;
+  width: 40%;
+  gap: 40px;
+  border-radius: 40px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 145%;
+cursor: pointer;
+ }
+ .btn1 a{
+  color: #ffffff;
+ }
+ /*Styling for buttons with black background*/
+ .btn1{
+  width: 60%;
+  height: 55px;
+  padding: 1% 1% 1% 2%;
+  gap: 10px;
+  border-radius: 40px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background-color: black;
+  font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 145%;
+cursor: pointer;
+ }
+a{
+  text-decoration: none;
+  color: #000000;
+}
+/*Styling for the Africa map logo*/
+#logo{
+  /* width: 75%; */
+  height: 100%;
+  margin-left: -13%;
+  margin-top: -2%;
+}
+.logo{
+  display: flex;
+  height: 100%;
+}
+/*Styling for the logoname AfroVerb*/
+#logoname{
+  color: #161C2D;
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.133px;
+}
+/*End of nav component styling*/
+/*Styling for section1 component*/
+.section{
+display: flex;
+flex-direction: row;
+width: 100%;
+height: 800px;
+padding-top: 20px;
+}
+.left_div{
+  /* padding-left: 68px; */
+width: 50%;
+padding-left: 10%;
+}
+.right_div{
+  /* padding-right: 68px; */
+width: 50%;
+padding-top: 5%;
+}
+/*---------------------------------------------------------------------------*/
+/*Styling for Maps component in right div of section1*/
+
+/*styling to align the Nigerian map to the ellipses in the right div*/
+/*Start-----------------------*/
+#Nigerian-flag{
+  width: 143.849px;
+height: 138.017px;
+flex-shrink: 0;
+border-radius: 1px;
+background: url(/public/images/Nigerian_flag.png) 0px -0.74px / 100% 100% no-repeat;
+}
+.image-container{
+  /* background-color: red; */
+  position: relative;
+  width: 200px;
+height: 200px;
+}
+.stacked-image{
+  position: absolute;
+  width: 100%;
+height: 100%;
+top: 22px;
+left: 18px;
+}
+.image-overlap{
+  position: absolute;
+  width: 85%;
+  top: 7px;
+  left: 7px;
+ }
+ /*End-----------------------*/
+ /*Styling to align nigerian map and ellipse to African map*/
+#Nigeria_map_div{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -50px;
+  left: 0px;
+}
+/*Styling to align Congo map and ellipse to African map*/
+#Congo_map_div{
+  position: absolute;
+  top: 600px;
+  left: 1080px;
+}
+/*Styling to allign congo flag to ellipses*/
+#Congolese_flag{
+  position: absolute;
+  width: 77.694px;
+  height: 74.544px;
+top: 20px;
+left: 20px;
+}
+/*Styling to align Kenyan map and ellipse to African map*/
+#kenya_map_div{
+  position: absolute;
+  top: 840px;
+  left: 1320px;
+}
+/*Styling to allign Kenyan flag to ellipses*/    
+#kenyan_flag{
+  position: absolute;
+  width: 111.582px;
+height: 107.059px;
+  top: 13px;
+  left: 12px;
+}
+/*Styling to create yellow semicircle background*/
+#yellowbackground1{
+  position: relative;
+  width: 365px;
+height: 265px;
+flex-shrink: 0;
+  border-radius: 222.5px 222.5px 0px 0px;
+background: #FFE562;
+}
+/*Styling for image of woman on yellow background*/
+#woman_image{
+  position: absolute;
+  top: -70px;
+  left: 20px;
+  width: 323px;
+height: 335px;
+flex-shrink: 0;
+background: url(/public/images/african-woman2.png)  0px 0px / 100% 100% no-repeat;
+}
+/*Styling to allign woman's image with Cameroonian flag to African map*/
+#woman_flag_div{
+  position: absolute;
+  top: 720px;
+  left: 820px;
+}
+/*Styling to align Cameroonian map and ellipses*/
+#Cameroonian_flag{
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+/*Styling to align Cameroonian flag to woman's image*/
+#Cameroon_map_div{
+  position: absolute;
+  left: -45px;
+}
+/*-------------------------------------------------------------------------*/
+/*End of Maps component styling*/
+/*Styling for the text in the left div of section1*/
+h1{
+  font-family: Manrope;
+font-size: 56px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.8px;
+}
+h5{
+  font-family: Manrope;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.2px;
+}
+.button_div{
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
