@@ -2,6 +2,7 @@ from django.shortcuts import render
 import requests
 import pyrebase
 from .forms import UserForm
+from ..firestore import add_document, get_document, update_document, delete_document, handle_firestore_error
 from django.shortcuts import render
 import requests
 import pyrebase
@@ -25,6 +26,15 @@ def sign_up(request):
         email = form.cleaned_data['email']
         password = form.cleaned_data['password']
         user = auth.create_user_with_email_and_password(email, password)
+        user_data = {
+            'id': user['localId'],
+            'email': email,
+            'username': form.cleaned_data.get('username', ''),
+        }
+        try:
+            add_document('users', user_data)
+        except Exception as e:
+            handle_firestore_error(e)
         return render(request, 'sign_up.html')
     else:
         return render(request, 'error.html', {'form': form})
