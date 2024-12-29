@@ -5,7 +5,11 @@ from backend.afroverb.settings import BASE_DIR
 # ...existing code...
 
 MIDDLEWARE = [
-    # Add your existing middleware here
+    # ...existing middleware...
+    'backend.middleware.ErrorHandlingMiddleware',
+    'backend.middleware.LoggingMiddleware',
+    'backend.middleware.AuthenticationMiddleware',
+    # ...existing middleware...
 ]
 
 INSTALLED_APPS = [

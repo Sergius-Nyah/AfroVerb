@@ -70,3 +70,6 @@ def update_profile(request):
     else:
         form = UserProfileForm(instance=request.user)
     return render(request, 'profile.html', {'form': form})
+
+def protected_view(request):
+    return JsonResponse({'message': 'This is a protected view'})
