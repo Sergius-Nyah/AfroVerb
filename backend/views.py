@@ -37,3 +37,8 @@ class CustomPasswordResetView(PasswordResetView):
             # Custom logic: Log password reset request
             logger.info(f"Password reset requested for email: {email}")
         return response
+
+@require_http_methods(["POST"])
+def registration_view(request):
+    # Handle the POST request here
+    return HttpResponse("Registration successful!")
